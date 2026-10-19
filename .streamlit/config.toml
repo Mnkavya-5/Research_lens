@@ -1,0 +1,5 @@
+[browser]
+gatherUsageStats = false  # keep the app fully local
+
+[server]
+address = "localhost"     # only reachable from this Mac

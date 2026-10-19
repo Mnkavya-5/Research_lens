@@ -1,0 +1,154 @@
+{
+ "created_by": "Claude (AI assistant) on 2026-10-16, from facts found in the indexed papers. Review before trusting.",
+ "how_to_read": "paper = part of the gold paper's title; answer_keywords = facts a correct answer must contain (min_match of them); evidence = text that must appear in a retrieved chunk. answerable=false means the papers cannot answer it and the system should refuse.",
+ "questions": [
+  {
+   "question": "How many question-answer-reference triples were used to evaluate the agentic RAG system for fintech?",
+   "paper": "RAG) for Fintech",
+   "answer_keywords": [
+    "85"
+   ],
+   "min_match": 1,
+   "evidence": "85 question",
+   "answerable": true
+  },
+  {
+   "question": "How many items does the ISLAMICFAITHQA benchmark contain?",
+   "paper": "Faithful Islamic Question Answering",
+   "answer_keywords": [
+    "3810"
+   ],
+   "min_match": 1,
+   "evidence": "3,810",
+   "answerable": true
+  },
+  {
+   "question": "Which languages does the ISLAMICFAITHQA benchmark cover?",
+   "paper": "Faithful Islamic Question Answering",
+   "answer_keywords": [
+    "Arabic",
+    "English"
+   ],
+   "min_match": 2,
+   "evidence": "Arabic/English",
+   "answerable": true
+  },
+  {
+   "question": "Which question answering datasets were used in the experimental comparison of naive, enhanced and agentic RAG?",
+   "paper": "Is Agentic RAG worth it",
+   "answer_keywords": [
+    "FIQA",
+    "NQ"
+   ],
+   "min_match": 1,
+   "evidence": "FIQA",
+   "answerable": true
+  },
+  {
+   "question": "Which DSPy optimizers did RAGalyst use to refine its metric prompts?",
+   "paper": "RAGalyst",
+   "answer_keywords": [
+    "COPRO",
+    "MIPROv2",
+    "LabeledFewShot"
+   ],
+   "min_match": 2,
+   "evidence": "COPRO",
+   "answerable": true
+  },
+  {
+   "question": "Which benchmark was RAGalyst's Answer Correctness metric validated against?",
+   "paper": "RAGalyst",
+   "answer_keywords": [
+    "STS-B",
+    "Semantic Textual Similarity"
+   ],
+   "min_match": 1,
+   "evidence": "STS-B",
+   "answerable": true
+  },
+  {
+   "question": "Which benchmark datasets were used to evaluate the privacy agent in the synthetic dataset generation framework?",
+   "paper": "Diverse And Private Synthetic Datasets",
+   "answer_keywords": [
+    "PII",
+    "PWI",
+    "PHI"
+   ],
+   "min_match": 2,
+   "evidence": "PII-Masking",
+   "answerable": true
+  },
+  {
+   "question": "How many HotpotQA questions were used in the component ablation study of agentic RAG?",
+   "paper": "Dissecting Agentic RAG",
+   "answer_keywords": [
+    "5000"
+   ],
+   "min_match": 1,
+   "evidence": "5,000 questions",
+   "answerable": true
+  },
+  {
+   "question": "What exact match score did the full agentic RAG pipeline achieve on HotpotQA in the ablation study?",
+   "paper": "Dissecting Agentic RAG",
+   "answer_keywords": [
+    "53.2"
+   ],
+   "min_match": 1,
+   "evidence": "EM=53.2",
+   "answerable": true
+  },
+  {
+   "question": "Which families of hallucination detectors does OpenHalDet support?",
+   "paper": "OpenHalDet",
+   "answer_keywords": [
+    "black-box",
+    "gray-box",
+    "white-box"
+   ],
+   "min_match": 2,
+   "evidence": "gray-box",
+   "answerable": true
+  },
+  {
+   "question": "How many comment-edit pairs are in the soup-dataset used by RAG-Reflect?",
+   "paper": "RAG-Reflect",
+   "answer_keywords": [
+    "5000"
+   ],
+   "min_match": 1,
+   "evidence": "soup-dataset",
+   "answerable": true
+  },
+  {
+   "question": "Which framework coordinates the agents in the agentic AI framework for 6G RAN automation?",
+   "paper": "RAN Automation in 6G",
+   "answer_keywords": [
+    "LangGraph"
+   ],
+   "min_match": 1,
+   "evidence": "LangGraph",
+   "answerable": true
+  },
+  {
+   "question": "What is the boiling point of mercury reported in these papers?",
+   "answerable": false
+  },
+  {
+   "question": "Which paper evaluates retrieval-augmented generation for medical image segmentation?",
+   "answerable": false
+  },
+  {
+   "question": "By how much did GPT-7 improve accuracy over GPT-6 in these experiments?",
+   "answerable": false
+  },
+  {
+   "question": "Which dataset of Mars rover telemetry logs was used for evaluation?",
+   "answerable": false
+  }
+ ],
+ "changes": [
+  "2026-10-16: privacy-datasets question accepted only 'PII-Masking'; a correct answer said 'PHI, PWI, and PII datasets'. Keywords changed to PII/PWI/PHI (2 of 3). Label bug, not a model fix."
+ ]
+}

@@ -1,0 +1,391 @@
+{
+ "topic": "RAG evaluation techniques for agentic AI systems",
+ "labelled_by": "Claude (AI assistant), from titles and abstracts on 2026-10-16. Review and correct these labels.",
+ "grades": "2 = directly about evaluating RAG or agentic RAG systems; 1 = related (agentic RAG or RAG methods); 0 = off-topic",
+ "papers": [
+  {
+   "title": "Diverse And Private Synthetic Datasets Generation for RAG evaluation: A multi-agent framework",
+   "abstract": "Retrieval-augmented generation (RAG) systems improve large language model outputs by incorporating external knowledge, enabling more informed and context-aware responses. However, the effectiveness and trustworthiness of these systems critically depends on how they are evaluated, particularly on whether the evaluation process captures real-world constraints like protecting sensitive information. While current evaluation efforts for RAG systems have primarily focused on the development of performance metrics, far less attention has been given to the design and quality of the underlying evaluation datasets, despite their pivotal role in enabling meaningful, reliable assessments. In this work, we introduce a novel multi-agent framework for generating synthetic QA datasets for RAG evaluation that prioritize semantic diversity and privacy preservation. Our approach involves: (1) a Diversity agent leveraging clustering techniques to maximize topical coverage and semantic variability, (2) a Privacy Agent that detects and mask sensitive information across multiple domains and (3) a QA curation agent that synthesizes private and diverse QA pairs suitable as ground truth for RAG evaluation. Extensive experiments demonstrate that our evaluation sets outperform baseline methods in diversity and achieve robust privacy masking on domain-specific datasets. This work offers a practical and ethically aligned pathway toward safer, more comprehensive RAG system evaluation, laying the foundation for future enhancements aligned with evolving AI regulations and compliance standards.",
+   "published": "2025-08-26T11:16:14Z",
+   "pdf_url": "https://arxiv.org/pdf/2508.18929v1",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "Survey and Experiments on Mental Disorder Detection via Social Media: From Large Language Models and RAG to Agents",
+   "abstract": "Mental disorders represent a critical global health challenge, and social media is increasingly viewed as a vital resource for real-time digital phenotyping and intervention. To leverage this data, large language models (LLMs) have been introduced, offering stronger semantic understanding and reasoning than traditional deep learning, thereby enhancing the explainability of detection results. Despite the growing prominence of LLMs in this field, there is a scarcity of scholarly works that systematically synthesize how advanced enhancement techniques, specifically Retrieval-Augmented Generation (RAG) and Agentic systems, can be utilized to address these reliability and reasoning limitations. Here, we systematically survey the evolving landscape of LLM-based methods for social media mental disorder analysis, spanning standard pre-trained language models, RAG to mitigate hallucinations and contextual gaps, and agentic systems for autonomous reasoning and multi-step intervention. We organize existing work by technical paradigm and clinical target, extending beyond common internalizing disorders to include psychotic disorders and externalizing behaviors. Additionally, the paper comprehensively evaluates the performance of LLMs, including the impact of RAG, across various tasks. This work establishes a unified benchmark for the field, paving the way for the development of trustworthy, autonomous AI systems that can deliver precise and explainable mental health support.",
+   "published": "2025-04-03T17:43:14Z",
+   "pdf_url": "https://arxiv.org/pdf/2504.02800v4",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "AI Knowledge Assist: An Automated Approach for the Creation of Knowledge Bases for Conversational AI Agents",
+   "abstract": "The utilization of conversational AI systems by leveraging Retrieval Augmented Generation (RAG) techniques to solve customer problems has been on the rise with the rapid progress of Large Language Models (LLMs). However, the absence of a company-specific dedicated knowledge base is a major barrier to the integration of conversational AI systems in contact centers. To this end, we introduce AI Knowledge Assist, a system that extracts knowledge in the form of question-answer (QA) pairs from historical customer-agent conversations to automatically build a knowledge base. Fine-tuning a lightweight LLM on internal data demonstrates state-of-the-art performance, outperforming larger closed-source LLMs. More specifically, empirical evaluation on 20 companies demonstrates that the proposed AI Knowledge Assist system that leverages the LLaMA-3.1-8B model eliminates the cold-start gap in contact centers by achieving above 90% accuracy in answering information-seeking questions. This enables immediate deployment of RAG-powered chatbots.",
+   "published": "2025-10-09T12:34:31Z",
+   "pdf_url": "https://arxiv.org/pdf/2510.08149v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "RAG-Reflect: Agentic Retrieval-Augmented Generation with Reflections for Comment-Driven Code Maintenance on Stack Overflow",
+   "abstract": "User comments on online programming platforms such as Stack Overflow play a vital role in maintaining the correctness and relevance of shared code examples. However, the majority of comments express gratitude or clarification, while only a small fraction highlight actionable issues that drive meaningful edits. This paper demonstrates how agentic AI principles can revolutionize software maintenance tasks by presenting RAG-Reflect, a modular framework that achieves fine-tuned-level performance for valid comment-edit prediction without task-specific training. Valid Comment-Edit Prediction (VCP) is the task of determining whether a user comment directly triggered a subsequent code edit. The framework integrates large language models (LLMs) with retrieval-augmented reasoning and self-reflection mechanisms. RAG-Reflect operates through a three-stage runtime workflow built on a one-time pattern analysis phase. During initialization, an Interpretation module analyzes the knowledge base to generate validation rules. At inference time, the system (1) retrieves contextual examples, (2) reasons about comment-edit causality, and (3) reflects on decisions using the pre-established rules. We evaluate RAG-Reflect on the publicly available SOUP benchmark, achieving Precision = 0.81, Recall = 0.74, and F1 = 0.78, outperforming traditional baselines (e.g., Logistic Regression, XGBoost, different prompting techniques) and closely approaching the performance of fine-tuned models (F1 = 0.773) without retraining. Our ablation and stage-level analyses show that both retrieval and reflection modules substantially enhance performance.",
+   "published": "2026-04-24T04:49:58Z",
+   "pdf_url": "https://arxiv.org/pdf/2604.22217v1",
+   "source": "arxiv",
+   "relevance": 1
+  },
+  {
+   "title": "Challenges for Generative AI in Legal Reasoning",
+   "abstract": "Large Language Models (LLMs) are being integrated into professional domains, yet their limitations in such high-stakes fields as law remain poorly understood. In response, this paper introduces examples of critical challenges to the functioning of generative and other forms of artificial intelligence (AI) as reliable reasoning tools in judicial decision-making. The study deconstructs core requirements and challenges for AI, including the ability to select the correct legal framework across jurisdictions, generate sound arguments based on the doctrine of the sources of law, distinguish ratio decidendi and obiter dicta in case law, resolve ambiguity arising from general clauses like \"reasonableness\", manage conflicting legal provisions, and apply the burden of proof correctly. The paper maps various AI enhancement mechanisms, such as retrieval-augmented generation (RAG), multi-agent systems and neuro-symbolic AI, to these challenges, assessing their potential to bridge the gap between the probabilistic nature of LLMs and the rigorous, choice-driven demands of legal interpretation. Furthermore, the paper sketches a path towards an evaluation framework, proposing that legal requirements be organized into normative, doctrinal, evidential, and technical categories, and subsequently operationalized into domain-specific, testable design obligations. The findings indicate that these techniques can address specific narrow challenges, but they fail to solve the more significant ones, particularly in tasks requiring discretion and transparent, justifiable reasoning. Therefore, we advocate for a staged adoption, first capturing efficiency in simple cases with technology already available today and sustaining long-term investment in new methods that handle hierarchy, temporality, and other requirements of legally sound reasoning, thus enabling expansion to complex adjudication in the future.",
+   "published": "2025-08-26T09:56:26Z",
+   "pdf_url": "https://arxiv.org/pdf/2508.18880v2",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Current state of LLM Risks and AI Guardrails",
+   "abstract": "Large language models (LLMs) have become increasingly sophisticated, leading to widespread deployment in sensitive applications where safety and reliability are paramount. However, LLMs have inherent risks accompanying them, including bias, potential for unsafe actions, dataset poisoning, lack of explainability, hallucinations, and non-reproducibility. These risks necessitate the development of \"guardrails\" to align LLMs with desired behaviors and mitigate potential harm.\n  This work explores the risks associated with deploying LLMs and evaluates current approaches to implementing guardrails and model alignment techniques. We examine intrinsic and extrinsic bias evaluation methods and discuss the importance of fairness metrics for responsible AI development. The safety and reliability of agentic LLMs (those capable of real-world actions) are explored, emphasizing the need for testability, fail-safes, and situational awareness.\n  Technical strategies for securing LLMs are presented, including a layered protection model operating at external, secondary, and internal levels. System prompts, Retrieval-Augmented Generation (RAG) architectures, and techniques to minimize bias and protect privacy are highlighted.\n  Effective guardrail design requires a deep understanding of the LLM's intended use case, relevant regulations, and ethical considerations. Striking a balance between competing requirements, such as accuracy and privacy, remains an ongoing challenge. This work underscores the importance of continuous research and development to ensure the safe and responsible use of LLMs in real-world applications.",
+   "published": "2024-06-16T22:04:10Z",
+   "pdf_url": "https://arxiv.org/pdf/2406.12934v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "A Comprehensive Survey of Large AI Models for Future Communications: Foundations, Applications and Challenges",
+   "abstract": "The 6G wireless communications aim to establish an intelligent world of ubiquitous connectivity, providing an unprecedented communication experience. Large artificial intelligence models (LAMs) are characterized by significantly larger scales (e.g., billions or trillions of parameters) compared to typical artificial intelligence (AI) models. LAMs exhibit outstanding cognitive abilities, including strong generalization capabilities for fine-tuning to downstream tasks, and emergent capabilities to handle tasks unseen during training. Therefore, LAMs efficiently provide AI services for diverse communication applications, making them crucial tools for addressing complex challenges in future wireless communication systems. This study provides a comprehensive review of the foundations, applications, and challenges of LAMs in communication. First, we introduce the current state of AI-based communication systems, emphasizing the motivation behind integrating LAMs into communications and summarizing the key contributions. We then present an overview of the essential concepts of LAMs in communication. This includes an introduction to the main architectures of LAMs, such as transformer, diffusion models, and mamba. We also explore the classification of LAMs, including large language models (LLMs), large vision models (LVMs), large multimodal models (LMMs), and world models, and examine their potential applications in communication. Additionally, we cover the training methods and evaluation techniques for LAMs in communication systems. Lastly, we introduce optimization strategies such as chain of thought (CoT), retrieval augmented generation (RAG), and agentic systems. Following this, we discuss the research advancements of LAMs across various communication scenarios. Finally, we analyze the challenges in the current research and provide insights into potential future research directions.",
+   "published": "2025-05-06T14:09:29Z",
+   "pdf_url": "https://arxiv.org/pdf/2505.03556v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Enhancing LLM-based Quantum Code Generation with Multi-Agent Optimization and Quantum Error Correction",
+   "abstract": "Multi-agent frameworks with Large Language Models (LLMs) have become promising tools for generating general-purpose programming languages using test-driven development, allowing developers to create more accurate and robust code. However, their potential has not been fully unleashed for domain-specific programming languages, where specific domain exhibits unique optimization opportunities for customized improvement. In this paper, we take the first step in exploring multi-agent code generation for quantum programs. By identifying the unique optimizations in quantum designs such as quantum error correction, we introduce a novel multi-agent framework tailored to generating accurate, fault-tolerant quantum code. Each agent in the framework focuses on distinct optimizations, iteratively refining the code using a semantic analyzer with multi-pass inference, alongside an error correction code decoder. We also examine the effectiveness of inference-time techniques, like Chain-of-Thought (CoT) and Retrieval-Augmented Generation (RAG) in the context of quantum programming, uncovering observations that are different from general-purpose code generation. To evaluate our approach, we develop a test suite to measure the impact each optimization has on the accuracy of the generated code. Our findings indicate that techniques such as structured CoT significantly improve the generation of quantum algorithms by up to 50%. In contrast, we have also found that certain techniques such as RAG show limited improvement, yielding an accuracy increase of only 4%. Moreover, we showcase examples of AI-assisted quantum error prediction and correction, demonstrating the effectiveness of our multi-agent framework in reducing the quantum errors of generated quantum programs.",
+   "published": "2025-04-20T10:06:37Z",
+   "pdf_url": "https://arxiv.org/pdf/2504.14557v2",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Retrieval-Augmented LLMs for Security Incident Analysis",
+   "abstract": "Investigating cybersecurity incidents requires collecting and analyzing evidence from multiple log sources, including intrusion detection alerts, network traffic records, and authentication events. This process is labor-intensive: analysts must sift through large volumes of data to identify relevant indicators and piece together what happened. We present a RAG-based system that performs security incident analysis through targeted query-based filtering and LLM semantic reasoning. The system uses a query library with associated MITRE ATT&CK techniques to extract indicators from raw logs, then retrieves relevant context to answer forensic questions and reconstruct attack sequences. We evaluate the system with eight LLM configurations on malware traffic incidents and a multi-stage Active Directory attack. We find that LLMs have different performance and tradeoffs, with Claude Sonnet 4 achieving 94% and DeepSeek V3 achieving 89% average recall across 17 malware scenarios, while DeepSeek costs 15$\\times$ less than Claude per analysis, and locally-deployed Llama 3.1:70b achieves 81% recall at zero per-query cost. Attack step detection on the Active Directory scenario reaches 100% precision and up to 96% recall with an enumeration prompt. These results demonstrate that combining targeted query-based filtering with RAG-based retrieval -- confirmed essential by ablation studies -- enables accurate, cost-effective security analysis within LLM context limits.",
+   "published": "2026-03-18T18:45:56Z",
+   "pdf_url": "https://arxiv.org/pdf/2603.18196v3",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "EvoPat: A Multi-LLM-based Patents Summarization and Analysis Agent",
+   "abstract": "The rapid growth of scientific techniques and knowledge is reflected in the exponential increase in new patents filed annually. While these patents drive innovation, they also present significant burden for researchers and engineers, especially newcomers. To avoid the tedious work of navigating a vast and complex landscape to identify trends and breakthroughs, researchers urgently need efficient tools to summarize, evaluate, and contextualize patents, revealing their innovative contributions and underlying scientific principles.To address this need, we present EvoPat, a multi-LLM-based patent agent designed to assist users in analyzing patents through Retrieval-Augmented Generation (RAG) and advanced search strategies. EvoPat leverages multiple Large Language Models (LLMs), each performing specialized roles such as planning, identifying innovations, and conducting comparative evaluations. The system integrates data from local databases, including patents, literature, product catalogous, and company repositories, and online searches to provide up-to-date insights. The ability to collect information not included in original database automatically is also implemented. Through extensive testing in the natural language processing (NLP) domain, we demonstrate that EvoPat outperforms GPT-4 in tasks such as patent summarization, comparative analysis, and technical evaluation. EvoPat represents a significant step toward creating AI-powered tools that empower researchers and engineers to efficiently navigate the complexities of the patent landscape.",
+   "published": "2024-12-24T02:21:09Z",
+   "pdf_url": "https://arxiv.org/pdf/2412.18100v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Agentic RAG: Autonomous Information Systems",
+   "abstract": null,
+   "published": "2025",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Agentic RAG Systems for Improving Adaptability and Performance in AI-Driven Information Retrieval",
+   "abstract": null,
+   "published": "2025",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Conceptualising RAG-Driven Agentic AI with Multi-Layer MCP for Seismic Structural Systems",
+   "abstract": "<jats:p>The integration of Generative AI into civil engineering is currently constrained by the susceptibility of Large Language Models (LLMs) to hallucination and their inherent lack of physics-based knowledge. To address these limitations, this paper presents a conceptual framework for the integration of Agentic Artificial Intelligence (AI) into the complete lifecycle of seismic-resistant structural engineering. The proposal employs a modular software architecture built on the Model Context Protocol (MCP), enabling distributed collaboration among specialised AI agents across six critical stages: (1) seismic hazard assessment, (2) structural modelling and analysis, (3) design and optimisation, (4) construction quality control, (5) structural health monitoring (SHM), and (6) ethical audit and explainability. In this architecture, agents operate as autonomous MCP Clients within a standardised context, orchestrating workflows by communicating directly with deterministic MCP Servers and the human user. This structure strictly manages tool execution through synchronous, verifiable MCP calls, ensuring that stochastic agentic reasoning remains decoupled from immutable numerical execution. By grounding generative outputs in physics-based engines and Retrieval-Augmented Generation (RAG), the framework ensures traceable reasoning, transparency, and professional accountability, offering a pathway for the ethical deployment of AI systems in civil and structural engineering.</jats:p>",
+   "published": "2025-12-5",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "Enhancing LLMs for Agentic AI: RAG vs. Fine-Tuning",
+   "abstract": null,
+   "published": "2025",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Agentic AI",
+   "abstract": null,
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "Design and Evaluation of Agentic RAG Systems: Native, Self-RAG, and Adaptive RAG",
+   "abstract": null,
+   "published": "2026-6",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 2
+  },
+  {
+   "title": "Comparing traditional AI, agentic ai and agentic rag for dialogic online education",
+   "abstract": "<jats:p>Online education increasingly depends on artificial intelligence (AI) for scale, personalization, and assessment. However, most deployments remain confined to one-shot, content-delivery paradigms that under-serve dialogic pedagogy, an approach centered on multi-voiced inquiry, co-construction of knowledge, and iterative, socially mediated reasoning. This paper synthesizes three paradigms of AI: Traditional AI, Agentic AI, and Agentic Retrieval-Augmented Generation (RAG), and evaluates how each can be applied to online teaching and learning organized around dialogic principles. I articulate a theory-led design space grounded in dialogic pedagogy (Freire, Bakhtin, Wegerif, Alexander) and contemporary learning science (Vygotsky’s ZPD; the Community of Inquiry framework; ICAP). I map each AI paradigm to core online education tasks (tutoring, assessment for learning, discussion orchestration, knowledge building). I propose reference architectures and governance patterns and offer implementation roadmaps, metrics, and risk mitigations. The paper argues that while traditional AI enables efficient, bounded tasks (e.g., automated grading, item generation), agentic AI introduces goal-directed orchestration across tools and actions required for authentic dialogic workflows (e.g., facilitation, critique, reflection). Agentic RAG best aligns with dialogic pedagogy by grounding agent decisions in evolving, cited knowledge; supporting multi-turn planning and verification; and maintaining memory of class discourse and norms. The paper concludes with a pragmatic recommendation: combine Agentic RAG for knowledge-intensive, discourse-heavy learning with narrowly scoped traditional AI services and agentic guards; evaluate with dialogic outcome metrics, not merely accuracy or time-on-task.</jats:p>",
+   "published": "2025-12-24",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Advanced RAG-Related Techniques for Improving Results",
+   "abstract": null,
+   "published": "2024",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Traditional RAG vs. Agentic RAG: A Comparative Study of Retrieval-Augmented Systems",
+   "abstract": "<jats:p>Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by integrating external knowledge retrieval to improve factual reliability. Traditional RAG employs a fixed, single-pass retrieval process, limiting its ability to handle multi-step reasoning, adaptive queries, and heterogeneous data sources. Agentic RAG extends this framework with autonomous agents that plan, iterate retrieval, integrate tools, and reason over intermediate results. This paper presents a comprehensive comparison of Traditional and Agentic RAG in terms of architecture, capabilities, evaluation metrics, and operational challenges. In addition to synthesizing representative systems, we provide a sideby-side analysis of comparative limitations, failure modes, and corresponding mitigations, mapping domain-specific applications across established and emerging fields. We also outline governance recommendations and propose future research directions, including graph-augmented, multimodal, human-in-the-loop, and domain-specialized Agentic RAG frameworks with standardized model cards. These insights offer both a technical and practical foundation for designing more adaptive, trustworthy, and contextaware retrieval-augmented systems.</jats:p>",
+   "published": "2025-8-26",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 2
+  },
+  {
+   "title": "Enterprise Search and RAG",
+   "abstract": null,
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+   "abstract": "While Retrieval-Augmented Generation (RAG) mitigates hallucination and knowledge staleness in Large Language Models (LLMs), existing frameworks often falter on complex, multi-hop queries that require synthesizing information from disparate sources. Current advanced RAG methods, employing iterative or adaptive strategies, lack a robust mechanism to systematically identify and fill evidence gaps, often propagating noise or failing to gather a comprehensive context. We introduce FAIR-RAG, a novel agentic framework that transforms the standard RAG pipeline into a dynamic, evidence-driven reasoning process. At its core is an Iterative Refinement Cycle governed by a module we term Structured Evidence Assessment (SEA). The SEA acts as an analytical gating mechanism: it deconstructs the initial query into a checklist of required findings and audits the aggregated evidence to identify confirmed facts and, critically, explicit informational gaps. These gaps provide a precise signal to an Adaptive Query Refinement agent, which generates new, targeted sub-queries to retrieve missing information. This cycle repeats until the evidence is verified as sufficient, ensuring a comprehensive context for a final, strictly faithful generation. We conducted experiments on challenging multi-hop QA benchmarks, including HotpotQA, 2WikiMultiHopQA, and MusiQue. In a unified experimental setup, FAIR-RAG significantly outperforms strong baselines. On HotpotQA, it achieves an F1-score of 0.453 -- an absolute improvement of 8.3 points over the strongest iterative baseline -- establishing a new state-of-the-art for this class of methods on these benchmarks. Our work demonstrates that a structured, evidence-driven refinement process with explicit gap analysis is crucial for unlocking reliable and accurate reasoning in advanced RAG systems for complex, knowledge-intensive tasks.",
+   "published": "2025-10-25T15:59:33Z",
+   "pdf_url": "https://arxiv.org/pdf/2510.22344v1",
+   "source": "arxiv",
+   "relevance": 1
+  },
+  {
+   "title": "An LLM -Powered Assessment Retrieval-Augmented Generation (RAG) For Higher Education",
+   "abstract": "Providing timely, consistent, and high-quality feedback in large-scale higher education courses remains a persistent challenge, often constrained by instructor workload and resource limitations. This study presents an LLM-powered, agentic assessment system built on a Retrieval-Augmented Generation (RAG) architecture to address these challenges. The system integrates a large language model with a structured retrieval mechanism that accesses rubric criteria, exemplar essays, and instructor feedback to generate contextually grounded grades and formative comments. A mixed-methods evaluation was conducted using 701 student essays, combining quantitative analyses of inter-rater reliability, scoring alignment, and consistency with instructor assessments, alongside qualitative evaluation of feedback quality, pedagogical relevance, and student support. Results demonstrate that the RAG system can produce reliable, rubric-aligned feedback at scale, achieving 94--99% agreement with human evaluators, while also enhancing students' opportunities for self-regulated learning and engagement with assessment criteria. The discussion highlights both pedagogical limitations, including potential constraints on originality and feedback dialogue, and the transformative potential of RAG systems to augment instructors' capabilities, streamline assessment workflows, and support scalable, adaptive learning environments. This research contributes empirical evidence for the application of agentic AI in higher education, offering a scalable and pedagogically informed model for enhancing feedback accessibility, consistency, and quality.",
+   "published": "2026-01-05T15:13:00Z",
+   "pdf_url": "https://arxiv.org/pdf/2601.06141v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Towards a RAG-based Summarization Agent for the Electron-Ion Collider",
+   "abstract": "The complexity and sheer volume of information encompassing documents, papers, data, and other resources from large-scale experiments demand significant time and effort to navigate, making the task of accessing and utilizing these varied forms of information daunting, particularly for new collaborators and early-career scientists. To tackle this issue, a Retrieval Augmented Generation (RAG)--based Summarization AI for EIC (RAGS4EIC) is under development. This AI-Agent not only condenses information but also effectively references relevant responses, offering substantial advantages for collaborators. Our project involves a two-step approach: first, querying a comprehensive vector database containing all pertinent experiment information; second, utilizing a Large Language Model (LLM) to generate concise summaries enriched with citations based on user queries and retrieved data. We describe the evaluation methods that use RAG assessments (RAGAs) scoring mechanisms to assess the effectiveness of responses. Furthermore, we describe the concept of prompt template-based instruction-tuning which provides flexibility and accuracy in summarization. Importantly, the implementation relies on LangChain, which serves as the foundation of our entire workflow. This integration ensures efficiency and scalability, facilitating smooth deployment and accessibility for various user groups within the Electron Ion Collider (EIC) community. This innovative AI-driven framework not only simplifies the understanding of vast datasets but also encourages collaborative participation, thereby empowering researchers. As a demonstration, a web application has been developed to explain each stage of the RAG Agent development in detail.",
+   "published": "2024-03-23T05:32:46Z",
+   "pdf_url": "https://arxiv.org/pdf/2403.15729v3",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "Agentic AI for 6G: A New Paradigm for Autonomous RAN Security Compliance",
+   "abstract": "Agentic AI systems are emerging as powerful tools for automating complex, multi-step tasks across various industries. One such industry is telecommunications, where the growing complexity of next-generation radio access networks (RANs) opens up numerous opportunities for applying these systems. Securing the RAN is a key area, particularly through automating the security compliance process, as traditional methods often struggle to keep pace with evolving specifications and real-time changes. In this article, we propose a framework that leverages LLM-based AI agents integrated with a retrieval-augmented generation (RAG) pipeline to enable intelligent and autonomous enforcement of security compliance. An initial case study demonstrates how an agent can assess configuration files for compliance with O-RAN Alliance and 3GPP standards, generate explainable justifications, and propose automated remediation if needed. We also highlight key challenges such as model hallucinations and vendor inconsistencies, along with considerations like agent security, transparency, and system trust. Finally, we outline future directions, emphasizing the need for telecom-specific LLMs and standardized evaluation frameworks.",
+   "published": "2025-12-13T17:15:00Z",
+   "pdf_url": "https://arxiv.org/pdf/2512.12400v2",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "MemoNoveltyAgent: A Historical Research Memory-Aware Agent Workflow for Paper Novelty Assessment",
+   "abstract": "To alleviate the heavy burden of paper screening, researchers increasingly rely on existing AI agents, such as AI reviewers or DeepResearch, for paper evaluation and novelty assessment. However, lacking specialized mechanisms for processing scholarly literature, their analyses often produce superficial results with noticeable deficiencies in quality. To bridge this gap, we introduce MemoNoveltyAgent, a multi-agent system designed to generate comprehensive and faithful novelty reports. Beyond retrieving concrete prior-paper evidence via RAG, our system incorporates a high-level abstract memory constructed from large-scale scholarly corpora. This memory organizes research into hierarchical trees to distill field-specific evolutionary trajectories, thereby providing a broader historical context. Furthermore, we decompose papers into discrete novelty points for fine-grained analysis and retrieval, while employing a self-validation mechanism to improve report faithfulness. Finally, to address the evaluation challenges of such open-ended generation tasks, we propose a RAG-augmented checklist evaluation method that enables reliable and evidence-grounded assessments. Extensive experiments demonstrate that MemoNoveltyAgent outperforms GPT-5 DeepResearch by 13.69%. Code and demo are available at https://github.com/SStan1/MemoNoveltyAgent",
+   "published": "2026-03-21T17:19:11Z",
+   "pdf_url": "https://arxiv.org/pdf/2603.20884v4",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "KAQG: A Knowledge-Graph-Enhanced RAG for Difficulty-Controlled Question Generation",
+   "abstract": "This study introduces Knowledge Augmented Question Generation (KAQG), an educational assessment framework that integrates Item Response Theory, abbreviated as IRT, Bloom's Taxonomy, and knowledge graphs into a multi-agent Retrieval-Augmented Generation (RAG) system. The proposed approach overcomes limitations of existing methods by enabling fine-grained control over item difficulty, psychometric calibration, and cognitive alignment. It employs multi-graph isolation to preserve domain-specific semantics and leverages a distributed agent architecture coordinated through Data Distribution Service, abbreviated as DDS, for scalable and fault-tolerant operations. Each agent specializes in tasks such as retrieval, generation, or evaluation, forming a modular and traceable pipeline. Distinctively, the framework encodes semantic hierarchies, PageRank-based concept weighting, and assessment-theory parameters directly into the generation process, ensuring that questions are both contextually grounded and cognitively calibrated. Deployed at Taiwan's National Institute of Environmental Research, the system has demonstrated practical value by reducing manual workload, improving reliability and validity, and supporting both adaptive and standardized assessments. By integrating psychometric theory with AI-driven retrieval and generation, this work establishes a scalable and cognitively aligned solution for education and professional certification.",
+   "published": "2025-05-12T14:42:19Z",
+   "pdf_url": "https://arxiv.org/pdf/2505.07618v2",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "MedAI: Evaluating TxAgent's Therapeutic Agentic Reasoning in the NeurIPS CURE-Bench Competition",
+   "abstract": "Therapeutic decision-making in clinical medicine constitutes a high-stakes domain in which AI guidance interacts with complex interactions among patient characteristics, disease processes, and pharmacological agents. Tasks such as drug recommendation, treatment planning, and adverse-effect prediction demand robust, multi-step reasoning grounded in reliable biomedical knowledge. Agentic AI methods, exemplified by TxAgent, address these challenges through iterative retrieval-augmented generation (RAG). TxAgent employs a fine-tuned Llama-3.1-8B model that dynamically generates and executes function calls to a unified biomedical tool suite (ToolUniverse), integrating FDA Drug API, OpenTargets, and Monarch resources to ensure access to current therapeutic information. In contrast to general-purpose RAG systems, medical applications impose stringent safety constraints, rendering the accuracy of both the reasoning trace and the sequence of tool invocations critical. These considerations motivate evaluation protocols treating token-level reasoning and tool-usage behaviors as explicit supervision signals. This work presents insights derived from our participation in the CURE-Bench NeurIPS 2025 Challenge, which benchmarks therapeutic-reasoning systems using metrics that assess correctness, tool utilization, and reasoning quality. We analyze how retrieval quality for function (tool) calls influences overall model performance and demonstrate performance gains achieved through improved tool-retrieval strategies. Our work was awarded the Excellence Award in Open Science. Complete information can be found at https://curebench.ai/.",
+   "published": "2025-12-12T16:01:48Z",
+   "pdf_url": "https://arxiv.org/pdf/2512.11682v2",
+   "source": "arxiv",
+   "relevance": 1
+  },
+  {
+   "title": "HR-Agents: Using Multiple LLM-based Agents to Improve Q&A about Brazilian Labor Legislation",
+   "abstract": "The Consolidation of Labor Laws (CLT) serves as the primary legal framework governing labor relations in Brazil, ensuring essential protections for workers. However, its complexity creates challenges for Human Resources (HR) professionals in navigating regulations and ensuring compliance. Traditional methods for addressing labor law inquiries often lead to inefficiencies, delays, and inconsistencies. To enhance the accuracy and efficiency of legal question-answering (Q&A), a multi-agent system powered by Large Language Models (LLMs) is introduced. This approach employs specialized agents to address distinct aspects of employment law while integrating Retrieval-Augmented Generation (RAG) to enhance contextual relevance. Implemented using CrewAI, the system enables cooperative agent interactions, ensuring response validation and reducing misinformation. The effectiveness of this framework is evaluated through a comparison with a baseline RAG pipeline utilizing a single LLM, using automated metrics such as BLEU, LLM-as-judge evaluations, and expert human assessments. Results indicate that the multi-agent approach improves response coherence and correctness, providing a more reliable and efficient solution for HR professionals. This study contributes to AI-driven legal assistance by demonstrating the potential of multi-agent LLM architectures in improving labor law compliance and streamlining HR operations.",
+   "published": "2026-03-13T13:47:11Z",
+   "pdf_url": "https://arxiv.org/pdf/2604.16337v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "ATU-Tutor: A RAG-Based Socratic Tutoring System with Agentic AI Adaptive Assessment",
+   "abstract": null,
+   "published": "2026-5-20",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "Retrieval-augmented Generation (RAG), Generative AI, and Agentic AI Governance: An Integrated Enterprise Governance Prioritization Architecture",
+   "abstract": "<jats:p>Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a Monte Carlo robustness assessment, a framework coverage matrix, a Governance Priority Score (GPS)-based demonstration, and a public-document relevance assessment. The primary contribution is an integrated governance decision-support architecture that uses the Enterprise AI Platform Taxonomy (EAPT) to estimate platform burden, the Enterprise AI Risk Taxonomy (EART) to organize governance-risk exposure, the Enterprise AI Governance Maturity Model (EAGM) to represent organizational readiness, and the Integrated Agentic AI Governance Framework (IAGF) to identify agentic AI oversight requirements within a unified workflow. These components are operationally connected through GPS, which links platform burden, governancerisk gaps, organizational readiness, agentic runtime-control needs, and executive decision support. The proposed architecture draws upon NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, COBIT, OWASP LLM Top 10, MITRE ATLAS, the EU AI Act, and related AI governance literature. A rubric-based analytical dataset covering 19 enterprise AI platforms evaluates each platform across eight subdimensions, with final platform-risk scores computed as the arithmetic mean of data access scope, operational autonomy, tool/API integration breadth, external connectivity, governance burden, cybersecurity exposure, adoption and shadow-AI risk, and supply-chain integrity. TThe expanded scoring method produces high rank stability relative to the original final-score dataset, with Spearman's ρ = 0.996, and remains directionally stable under coding-uncertainty stress testing; these results are interpreted only as internal coding stability and robustness, not external validation. Public evidence from U.S. government agencies, universities, healthcare systems, and financial institutions is used to assess architecture relevance and observability, not to claim organizational effectiveness. The paper contributes a bounded design-science foundation for future inter-rater reliability testing, Delphi expert validation, organizational pilots, psychometric evaluation, and dashboard usability assessment.</jats:p>",
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "AI-Enhanced Embedded Agentic Retrieval for Efficient Single-Call Generation with Multi-Call Agentic RAG Answer Quality IEEE",
+   "abstract": "<jats:p>Agentic Retrieval-Augmented Generation (RAG) improves answer reliability by combining retrieval, reasoning, and iterative information refinement, but repeated model calls can increase latency, computational overhead, and deployment complexity. This paper introduces an embedded agentic retrieval framework enhanced by Artificial Intelligence (AI) that aims to produce efficient single-call retrieval while maintaining answer quality similar to multi-call agentic retrieval (RAG). The proposed method combines the following: query-aware retrieval, context compression, relevance prioritization, and embedded reasoning together in a single generation call. The framework combines relevant evidence into a concise context representation, eliminating the need to repeatedly invoke the language model during the retrieval and reasoning phases, and then generates the response in the end. Experimental evaluation evaluates the quality of answers, the relevance of retrieval, the time taken to respond, the number of tokens, and the efficiency of computation on a set of representative retrieval-based question-answering tasks. The proposed EARG framework achieved 98.1% accuracy while reducing latency and maintaining high answer quality. The framework is an efficient basis for effective agentic RAG systems that need scalable, low-latency, and resource-efficient generation.</jats:p>",
+   "published": "2026-10-13",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Early Detection and Medication Suggestion for Parkinson's Disease Using Multimodal, Agentic AI, and RAG",
+   "abstract": "<jats:p>Parkinson's disease (PD) is a progressive neurodegenerative disorder with no cure and limited early biomarkers. Early diagnosis is critical for intervention, enrollment in clinical trials, and optimizing symptomatic treatment. This paper proposes a multimodal deep learning framework that integrates clinical imaging, sensor data, speech, and biochemical biomarkers for early PD detection. To bridge detection with personalized medication suggestions, we embed an agentic AI system powered by Retrieval-Augmented Generation (RAG) to provide evidence-based clinical recommendations contextualized to patient profiles. Extensive experiments on publicly available datasets demonstrate that the proposed system outperforms unimodal baselines and yields actionable treatment options grounded in current clinical evidence.</jats:p>",
+   "published": "2026-2-27",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 0
+  },
+  {
+   "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+   "abstract": "Retrieval-Augmented Generation (RAG) systems often face limitations in specialized domains such as fintech, where domain-specific ontologies, dense terminology, and acronyms complicate effective retrieval and synthesis. This paper introduces an agentic RAG architecture designed to address these challenges through a modular pipeline of specialized agents. The proposed system supports intelligent query reformulation, iterative sub-query decomposition guided by keyphrase extraction, contextual acronym resolution, and cross-encoder-based context re-ranking. We evaluate our approach against a standard RAG baseline using a curated dataset of 85 question--answer--reference triples derived from an enterprise fintech knowledge base. Experimental results demonstrate that the agentic RAG system outperforms the baseline in retrieval precision and relevance, albeit with increased latency. These findings suggest that structured, multi-agent methodologies offer a promising direction for enhancing retrieval robustness in complex, domain-specific settings.",
+   "published": "2025-10-29T13:41:36Z",
+   "pdf_url": "https://arxiv.org/pdf/2510.25518v1",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+   "abstract": "Retrieval-Augmented Generation (RAG) and agentic AI systems are increasingly prevalent in enterprise AI deployments. However, real enterprise environments introduce challenges largely absent from academic treatments and consumer-facing APIs: multiple tenants with heterogeneous data, strict access-control requirements, regulatory compliance, and cost pressures that demand shared infrastructure.\n  A fundamental problem underlies existing RAG architectures in these settings: retrieval systems rank documents by relevance--whether through semantic similarity, keyword matching, or hybrid approaches--not by authorization, so a query from one tenant can surface another tenant's confidential data simply because it scores highest. We formalize this gap and analyze additional shortcomings--including tool-mediated disclosure, context accumulation across turns, and client-side orchestration bypass--that arise when agentic systems conflate relevance with authorization. To address these challenges, we introduce a layered isolation architecture combining policy-aware ingestion, retrieval-time gating, and shared inference, enforced through server-side agentic orchestration. This approach centralizes security-critical operations--tool execution authorization, state isolation, and policy enforcement--on the server, creating natural enforcement points for multitenant isolation while allowing client-side frameworks to retain control over agent composition and latency-sensitive operations.\n  We validate the proposed architecture through an open-source implementation in OGX, a vendor-neutral framework that implements an OpenAI-compatible, open-source Responses API with server-side multi-turn orchestration. We evaluate it empirically and show that ABAC gating eliminates cross-tenant leakage while introducing negligible overhead.",
+   "published": "2026-05-06T17:59:21Z",
+   "pdf_url": "https://arxiv.org/pdf/2605.05287v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "RAGalyst: Automated Human-Aligned Agentic Evaluation for Domain-Specific RAG",
+   "abstract": "Retrieval-Augmented Generation (RAG) is a critical technique for grounding Large Language Models (LLMs) in factual evidence, yet evaluating RAG systems in specialized, safety-critical domains remains a significant challenge. Existing evaluation frameworks often rely on heuristic-based metrics that fail to capture domain-specific nuances and other works utilize LLM-as-a-Judge approaches that lack validated alignment with human judgment. This paper introduces RAGalyst, an automated, human-aligned agentic framework designed for the rigorous evaluation of domain-specific RAG systems. RAGalyst features an agentic pipeline that generates high-quality, synthetic question-answering (QA) datasets from source documents, incorporating an agentic filtering step to ensure data fidelity. The framework refines two key LLM-as-a-Judge metrics-Answer Correctness and Answerability-using prompt optimization to achieve a strong correlation with human annotations. Applying this framework to evaluate various RAG components across three distinct domains (military operations, cybersecurity, and bridge engineering), we find that performance is highly context-dependent. No single embedding model, LLM, or hyperparameter configuration proves universally optimal. Additionally, we provide an analysis on the most common low Answer Correctness reasons in RAG. These findings highlight the necessity of a systematic evaluation framework like RAGalyst, which empowers practitioners to uncover domain-specific trade-offs and make informed design choices for building reliable and effective RAG systems. RAGalyst is available on our Github.",
+   "published": "2025-11-06T16:22:52Z",
+   "pdf_url": "https://arxiv.org/pdf/2511.04502v1",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "Is Agentic RAG worth it? An experimental comparison of RAG approaches",
+   "abstract": "Retrieval-Augmented Generation (RAG) systems are usually defined by the combination of a generator and a retrieval component that extracts textual context from a knowledge base to answer user queries. However, such basic implementations exhibit several limitations, including noisy or suboptimal retrieval, misuse of retrieval for out-of-scope queries, weak query-document matching, and variability or cost associated with the generator. These shortcomings have motivated the development of \"Enhanced\" RAG, where dedicated modules are introduced to address specific weaknesses in the workflow. More recently, the growing self-reflective capabilities of Large Language Models (LLMs) have enabled a new paradigm, often referred to as \"Agentic\" RAG. In this approach, an LLM orchestrates the entire process, deciding which actions to perform, when to perform them, and whether to iterate. Despite the rapid adoption of both paradigms, it remains unclear which approach is preferable under which conditions. In this work, we conduct an empirically driven evaluation of \"Enhanced\" and \"Agentic\" RAG across multiple scenarios and dimensions. Our results provide practical insights into the trade-offs between the two paradigms, offering guidance on selecting the most effective RAG design for real-world applications, considering both performance and costs.",
+   "published": "2026-01-12T16:43:44Z",
+   "pdf_url": "https://arxiv.org/pdf/2601.07711v2",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "An Interactive Multi-Agent System for Evaluation of New Product Concepts",
+   "abstract": "Product concept evaluation is a critical stage that determines strategic resource allocation and project success in enterprises. However, traditional expert-led approaches face limitations such as subjective bias and high time and cost requirements. To support this process, this study proposes an automated approach utilizing a large language model (LLM)-based multi-agent system (MAS). Through a systematic analysis of previous research on product development and team collaboration, this study established two primary evaluation dimensions, namely technical feasibility and market feasibility. The proposed system consists of a team of eight virtual agents representing specialized domains such as R&D and marketing. These agents use retrieval-augmented generation (RAG) and real-time search tools to gather objective evidence and validate concepts through structured deliberations based on the established criteria. The agents were further fine-tuned using professional product review data to enhance their judgment accuracy. A case study involving professional display monitor concepts demonstrated that the system's evaluation rankings were consistent with those of senior industry experts. These results confirm the usability of the proposed multi-agent-based evaluation approach for supporting product development decisions.",
+   "published": "2026-03-06T07:22:52Z",
+   "pdf_url": "https://arxiv.org/pdf/2603.05980v1",
+   "source": "arxiv",
+   "relevance": 0
+  },
+  {
+   "title": "An Empirical Evaluation of LLM-Based Approaches for Code Vulnerability Detection: RAG, SFT, and Dual-Agent Systems",
+   "abstract": "The rapid advancement of Large Language Models (LLMs) presents new opportunities for automated software vulnerability detection, a crucial task in securing modern codebases. This paper presents a comparative study on the effectiveness of LLM-based techniques for detecting software vulnerabilities. The study evaluates three approaches, Retrieval-Augmented Generation (RAG), Supervised Fine-Tuning (SFT), and a Dual-Agent LLM framework, against a baseline LLM model. A curated dataset was compiled from Big-Vul and real-world code repositories from GitHub, focusing on five critical Common Weakness Enumeration (CWE) categories: CWE-119, CWE-399, CWE-264, CWE-20, and CWE-200. Our RAG approach, which integrated external domain knowledge from the internet and the MITRE CWE database, achieved the highest overall accuracy (0.86) and F1 score (0.85), highlighting the value of contextual augmentation. Our SFT approach, implemented using parameter-efficient QLoRA adapters, also demonstrated strong performance. Our Dual-Agent system, an architecture in which a secondary agent audits and refines the output of the first, showed promise in improving reasoning transparency and error mitigation, with reduced resource overhead. These results emphasize that incorporating a domain expertise mechanism significantly strengthens the practical applicability of LLMs in real-world vulnerability detection tasks.",
+   "published": "2026-01-01T08:05:51Z",
+   "pdf_url": "https://arxiv.org/pdf/2601.00254v1",
+   "source": "arxiv",
+   "relevance": 1
+  },
+  {
+   "title": "Beyond RAG for Cyber Threat Intelligence: A Systematic Evaluation of Graph-Based and Agentic Retrieval",
+   "abstract": "Cyber threat intelligence (CTI) analysts must answer complex questions over large collections of narrative security reports. Retrieval-augmented generation (RAG) systems help language models access external knowledge, but traditional vector retrieval often struggles with queries that require reasoning over relationships between entities such as threat actors, malware, and vulnerabilities. This limitation arises because relevant evidence is often distributed across multiple text fragments and documents. Knowledge graphs address this challenge by enabling structured multi-hop reasoning through explicit representations of entities and relationships. However, multiple retrieval paradigms, including graph-based, agentic, and hybrid approaches, have emerged with different assumptions and failure modes. It remains unclear how these approaches compare in realistic CTI settings and when graph grounding improves performance. We present a systematic evaluation of four RAG architectures for CTI analysis: standard vector retrieval, graph-based retrieval over a CTI knowledge graph, an agentic variant that repairs failed graph queries, and a hybrid approach combining graph queries with text retrieval. We evaluate these systems on 3,300 CTI question-answer pairs spanning factual lookups, multi-hop relational queries, analyst-style synthesis questions, and unanswerable cases. Results show that graph grounding improves performance on structured factual queries. The hybrid graph-text approach improves answer quality by up to 35 percent on multi-hop questions compared to vector RAG, while maintaining more reliable performance than graph-only systems.",
+   "published": "2026-04-13T13:02:44Z",
+   "pdf_url": "https://arxiv.org/pdf/2604.11419v1",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "RAG Playground: A Framework for Systematic Evaluation of Retrieval Strategies and Prompt Engineering in RAG Systems",
+   "abstract": "We present RAG Playground, an open-source framework for systematic evaluation of Retrieval-Augmented Generation (RAG) systems. The framework implements and compares three retrieval approaches: naive vector search, reranking, and hybrid vector-keyword search, combined with ReAct agents using different prompting strategies. We introduce a comprehensive evaluation framework with novel metrics and provide empirical results comparing different language models (Llama 3.1 and Qwen 2.5) across various retrieval configurations. Our experiments demonstrate significant performance improvements through hybrid search methods and structured self-evaluation prompting, achieving up to 72.7% pass rate on our multi-metric evaluation framework. The results also highlight the importance of prompt engineering in RAG systems, with our custom-prompted agents showing consistent improvements in retrieval accuracy and response quality.",
+   "published": "2024-12-16T19:40:26Z",
+   "pdf_url": "https://arxiv.org/pdf/2412.12322v1",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "Evaluating RAG-Fusion with RAGElo: an Automated Elo-based Framework",
+   "abstract": "Challenges in the automated evaluation of Retrieval-Augmented Generation (RAG) Question-Answering (QA) systems include hallucination problems in domain-specific knowledge and the lack of gold standard benchmarks for company internal tasks. This results in difficulties in evaluating RAG variations, like RAG-Fusion (RAGF), in the context of a product QA task at Infineon Technologies. To solve these problems, we propose a comprehensive evaluation framework, which leverages Large Language Models (LLMs) to generate large datasets of synthetic queries based on real user queries and in-domain documents, uses LLM-as-a-judge to rate retrieved documents and answers, evaluates the quality of answers, and ranks different variants of Retrieval-Augmented Generation (RAG) agents with RAGElo's automated Elo-based competition. LLM-as-a-judge rating of a random sample of synthetic queries shows a moderate, positive correlation with domain expert scoring in relevance, accuracy, completeness, and precision. While RAGF outperformed RAG in Elo score, a significance analysis against expert annotations also shows that RAGF significantly outperforms RAG in completeness, but underperforms in precision. In addition, Infineon's RAGF assistant demonstrated slightly higher performance in document relevance based on MRR@5 scores. We find that RAGElo positively aligns with the preferences of human annotators, though due caution is still required. Finally, RAGF's approach leads to more complete answers based on expert annotations and better answers overall based on RAGElo's evaluation criteria.",
+   "published": "2024-06-20T23:20:34Z",
+   "pdf_url": "https://arxiv.org/pdf/2406.14783v2",
+   "source": "arxiv",
+   "relevance": 2
+  },
+  {
+   "title": "Agentic RAG for Cyber Threat Intelligence",
+   "abstract": null,
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Comparing RAG, DPO and Agentic Approaches in Systems Performance on Q&amp;A about Brazilian Labor Legislation",
+   "abstract": null,
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "An Empirical Evaluation Framework for Agentic RAG Trustworthiness in SAP, Finance, and Healthcare",
+   "abstract": "<jats:p>The deployment of Agentic Retrieval-Augmented Generation (RAG) systems in regulated enterprise environments-such as SAP landscapes, financial institutions, and healthcare networks-demands a paradigm shift from optimizing for accuracy alone to ensuring comprehensive trustworthiness. While Agentic RAG architectures demonstrate remarkable potential for automating complex, multi-step workflows, their adoption in high-stakes sectors is hindered by the absence of standardized, empirically validated evaluation metrics that capture the multidimensional nature of reliability, safety, and compliance. Existing benchmarks overwhelmingly prioritize response quality over critical dimensions such as audit log completeness, procedural fidelity, resilience to adversarial inputs, and deference mechanisms for uncertain scenarios. This research proposes a novel empirical evaluation framework specifically designed for trustworthy Agentic RAG in regulated settings. The framework introduces two primary metrics: Agentic Success Rate (ASR) , which measures the fidelity of end-to-end workflow execution against predefined business process standards (e.g., SAP S/4HANA transaction integrity), and Evaluation Completion Rate (ECR) , which quantifies the system's ability to reliably produce verifiable audit trails and defer to human experts when confidence thresholds are breached. Through a series of controlled experiments simulating SAP financial close processes, healthcare prior-authorization workflows, and FINRA-compliant trade reporting, we validate the framework's effectiveness. Preliminary findings demonstrate that our framework can identify performance degradation caused by vector store precision errors and RBAC granularity gaps-factors that conventional accuracy metrics miss entirely. The proposed evaluation methodology provides a blueprint for organizations to empirically certify Agentic RAG systems before production deployment, establishing a critical bridge between generative AI capabilities and the immutable audit, security, and interpretability requirements mandated by SOX, HIPAA, GDPR, and the EU AI Act. By shifting the evaluation lens from \"correctness\" to \"trustworthiness,\" this work aims to accelerate the responsible adoption of agentic AI across the most regulated sectors of the global economy.</jats:p>",
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 2
+  },
+  {
+   "title": "A Unified Evaluation Framework for Grounded LLM Architectures: Comparative Analysis of RAG, Self-RAG, and Agentic RAG",
+   "abstract": null,
+   "published": "2025-11-22",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 2
+  },
+  {
+   "title": "Design Insights from Empirical Experiences in Implementing Agentic RAG Systems",
+   "abstract": null,
+   "published": "2025-8-31",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "Achieving Audit Log Completeness in Agentic RAG Systems: A Framework for SAP Financial Workflows",
+   "abstract": "<jats:p>The integration of Agentic Retrieval-Augmented Generation (RAG) systems into enterprise financial workflows, particularly within complex SAP environments, introduces transformative efficiencies alongside critical governance challenges. Chief among these is the assurance of audit log completeness—a non-negotiable requirement for regulatory compliance, financial integrity, and post-hoc forensic analysis. Traditional logging mechanisms fail to capture the dynamic, non-deterministic, and multi-agent decision chains characteristic of autonomous RAG pipelines, leading to opaque action trails and unreconcilable state changes. This paper proposes a novel framework for achieving end-to-end audit log completeness in Agentic RAG systems deployed over SAP financial modules. Our architecture introduces a causal provenance layer that cryptographically links agent reasoning steps, retrieved document chunks, tool invocations (e.g., BAPI calls, Fiori data extraction), and final financial postings into an immutable, temporally-ordered audit graph. We operationalize completeness through three pillars: (1) Semantic Coverage, ensuring all retrieved contexts that influence a financial decision are logged, irrespective of relevance scores; (2) Action Atomicity, capturing every internal agent decision (including aborted or re-prompted cycles) as discrete loggable events; and (3) Non-Repudiation, via hash-chained integrity verification against SAP's native change-document logs. We evaluate our framework using a real-world SAP S/4HANA testbed with synthetic financial transaction datasets, measuring completeness ratios, logging overhead, and reconstruction fidelity during simulated internal and external audits. Results demonstrate that our framework achieves 99.97% log completeness with a latency overhead below 7.2%, while enabling full traceability of system-generated financial entries back to specific user queries and retrieved source artifacts. We further discuss implementation patterns for integrating with SAP's audit information system (CA-AIS) and provide a maturity model for assessing audit readiness in generative AI financial applications. This work establishes a foundational blueprint for deploying trustworthy Agentic RAG in regulated financial domains, bridging the gap between autonomous AI reasoning and statutory auditability.</jats:p>",
+   "published": "2026-7-21",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  },
+  {
+   "title": "xCARE: Explainable Continual Adaptation and Remediation Engine via Agentic RAG for Concept Drift in Intelligent Tutoring Systems",
+   "abstract": null,
+   "published": "2026",
+   "pdf_url": null,
+   "source": "crossref",
+   "relevance": 1
+  }
+ ]
+}
